@@ -215,6 +215,31 @@ section h2 { font-size: 1.9rem; margin: 0 0 8px; }
 }
 
 /* ---------- Projects ---------- */
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+.filter-btn {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-dim);
+  cursor: pointer;
+}
+.filter-btn:hover { color: var(--text); border-color: var(--accent); }
+.filter-btn.is-active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #07130f;
+  font-weight: 600;
+}
+.project-card[hidden] { display: none; }
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

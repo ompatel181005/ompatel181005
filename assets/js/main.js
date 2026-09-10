@@ -30,6 +30,28 @@ if ("IntersectionObserver" in window && revealEls.length) {
   revealEls.forEach((el) => el.classList.add("in-view"));
 }
 
+// Project category filter
+const filterBtns = document.querySelectorAll(".filter-btn");
+const projectCards = document.querySelectorAll(".project-card");
+
+filterBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const filter = btn.dataset.filter;
+
+    filterBtns.forEach((b) => {
+      b.classList.remove("is-active");
+      b.setAttribute("aria-selected", "false");
+    });
+    btn.classList.add("is-active");
+    btn.setAttribute("aria-selected", "true");
+
+    projectCards.forEach((card) => {
+      const show = filter === "all" || card.dataset.category === filter;
+      card.hidden = !show;
+    });
+  });
+});
+
 // Footer year
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
