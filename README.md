@@ -2,7 +2,7 @@
 <p align="center"><i>AI/ML • Edge Computing • Full-Stack Engineering • Computer Vision</i></p>
 
 <p align="center">
-  <a href="https://ompatel181005.github.io/"><b>🌐 View my portfolio →</b></a>
+  <a href="https://ompatel181005.github.io/ompatel181005/"><b>🌐 View my portfolio →</b></a>
 </p>
 
 <p align="center">
@@ -21,7 +21,7 @@ CS student at UIC (Class of 2027) building AI-native, high-performance systems �
 real-time computer vision on edge hardware, multi-agent LLM apps, and full-stack ML products.
 
 **Featured projects, write-ups, and skills live on my portfolio site:**
-### 👉 [ompatel181005.github.io](https://ompatel181005.github.io/)
+### 👉 [ompatel181005.github.io/ompatel181005](https://ompatel181005.github.io/ompatel181005/)
 
 ---
 
