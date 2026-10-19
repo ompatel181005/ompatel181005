@@ -27,7 +27,7 @@ building AI tools, data systems and edge computer vision. Co-author of an invite
 | Project | What it is |
 |---|---|
 | 🏆 **[Luna Terminal](https://github.com/Darthh/Luna-LPL11-Hackathon)** | *Winner, LPL Financial Hackathon 2026.* AI research agent for financial advisors, deployed on AWS — I owned the backend, cloud and data layer |
-| 🏆 **MIRA** | *1st Place, AI Track, ALI Builds Hackathon (UChicago).* No-account healthcare navigator for uninsured patients, in 15 languages |
+| 🏆 **[MIRA](https://github.com/ompatel181005/Mira)** | *1st Place, AI Track, ALI Builds Hackathon (UChicago).* No-account healthcare navigator for uninsured patients, in 15 languages |
 | **[Recall](https://github.com/ompatel181005/Recall)** | Local-first lecture app with GPU transcription and a RAG tutor that cites the exact lecture and timestamp |
 | **[JobFit AI](https://github.com/ompatel181005/jobfit)** | Resume-to-job matcher using semantic matching and LLM feedback |
 | **Prediction-Market Trading Bot** | Forecasting and risk work on an open-source bot for Chicago temperature markets |
