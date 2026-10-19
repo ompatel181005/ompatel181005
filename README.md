@@ -1,5 +1,5 @@
 <h1 align="center">👋 Hi, I'm Om Patel</h1>
-<p align="center"><i>AI/ML • Edge Computing • Full-Stack Engineering • Computer Vision</i></p>
+<p align="center"><i>Software engineer · Sole engineer at Mooremac · Researcher at UIC's EVL · TA for CS 251</i></p>
 
 <p align="center">
   <a href="https://ompatel181005.github.io/ompatel181005/"><b>🌐 View my portfolio →</b></a>
@@ -17,8 +17,8 @@
   <img src="https://img.shields.io/badge/NVIDIA_Jetson-76B900?logo=nvidia&logoColor=white" />
 </p>
 
-CS student at UIC (Class of 2027) building AI-native, high-performance systems —
-low-latency C++, real-time computer vision on edge hardware, LLM-powered tools, and data pipelines.
+CS junior at UIC (B.S. Computer Science, expected Dec 2027; minors in Mathematics and Business Analytics)
+building AI tools, data systems and edge computer vision. Co-author of an invited IEEE IPDPS 2026 paper.
 
 **Featured projects, write-ups, and skills live on my portfolio site:**
 ### 👉 [ompatel181005.github.io/ompatel181005](https://ompatel181005.github.io/ompatel181005/)
@@ -26,16 +26,14 @@ low-latency C++, real-time computer vision on edge hardware, LLM-powered tools, 
 ## 🔭 Recent work
 | Project | What it is |
 |---|---|
-| 🏆 **[Luna Terminal](https://github.com/Darthh/Luna-LPL11-Hackathon)** | *Hackathon winner.* AI financial research terminal on serverless AWS (Bedrock, AgentCore, DynamoDB, Aurora DSQL); I built the backend, deployment, chat history, data stack and MCP endpoint |
-| **Exchange Simulator** | C++20 limit-order-book matching engine + market-making backtester — ~9M req/s, p99 < 600 ns |
-| **[Job Match Extension](https://github.com/ompatel181005/job-match-extension)** | Local-first Chrome extension + FastAPI service that ranks résumé versions against a job posting, with explainable scoring |
-| **[Recall](https://github.com/ompatel181005/Recall)** | Lecture recorder with local Whisper transcription and a RAG tutor that cites the exact minute |
-| **[JobFit AI](https://github.com/ompatel181005/jobfit)** | 3-agent résumé ↔ job matcher (SBERT + Gemini) |
-| **Analytics Warehouse** | Unattended DuckDB ETL pipeline with validation gates, audit history, MCP + Power BI feeds |
-| 🏆 **[Mira](https://mira-dun-alpha.vercel.app)** | *Hackathon winner.* Multilingual healthcare navigator for uninsured patients |
-| 🏆 **[Emissions Prediction](https://github.com/ompatel181005/fitch-codeathon2025_DreamTeam)** | *Winner, FitchGroup Codeathon 2025.* Calibrated quantile-ensemble model for Scope 1/2 emissions (R² 0.65) |
+| 🏆 **[Luna Terminal](https://github.com/Darthh/Luna-LPL11-Hackathon)** | *Winner, LPL Financial Hackathon 2026.* AI research agent for financial advisors, deployed on AWS — I owned the backend, cloud and data layer |
+| 🏆 **MIRA** | *1st Place, AI Track, ALI Builds Hackathon (UChicago).* No-account healthcare navigator for uninsured patients, in 15 languages |
+| **[Recall](https://github.com/ompatel181005/Recall)** | Local-first lecture app with GPU transcription and a RAG tutor that cites the exact lecture and timestamp |
+| **[JobFit AI](https://github.com/ompatel181005/jobfit)** | Resume-to-job matcher using semantic matching and LLM feedback |
+| **Prediction-Market Trading Bot** | Forecasting and risk work on an open-source bot for Chicago temperature markets |
+| **LLM Training on a Supercomputer** | Trained an LLM from scratch and fine-tuned a speech model on NERSC's Perlmutter |
 
-Full list (with filters) on the [portfolio](https://ompatel181005.github.io/ompatel181005/).
+Experience, projects and awards on the [portfolio](https://ompatel181005.github.io/ompatel181005/).
 
 ---
 
