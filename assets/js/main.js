@@ -186,7 +186,7 @@ if (cursor && finePointer && !reduceMotion) {
   };
   loop();
   document.addEventListener("pointerover", (e) => {
-    cursor.classList.toggle("is-big", !!e.target.closest("a, button, .project-card, .skill-card"));
+    cursor.classList.toggle("is-big", !!e.target.closest("a, button, summary, .project-card.has-details, .skill-card"));
   });
 }
 
@@ -217,34 +217,42 @@ document.querySelectorAll(".skill-card").forEach((card) => {
   });
 });
 
+// Award rows light up on tap (hover covers mouse users)
+document.querySelectorAll(".award-row").forEach((row) => {
+  row.addEventListener("pointerdown", (e) => {
+    if (e.pointerType !== "mouse") row.classList.toggle("is-lit");
+  });
+});
+
 // Project cards: tilt toward the pointer, tap to expand details
 const projectCards = document.querySelectorAll(".project-card");
 projectCards.forEach((card) => {
   const items = card.querySelectorAll("li");
-  if (items.length > 1) {
+  const label = () => `+ ${items.length} detail${items.length === 1 ? "" : "s"} — tap to expand`;
+  if (items.length) {
     const more = document.createElement("p");
     more.className = "more";
-    more.textContent = `+ ${items.length - 1} more — tap to expand`;
+    more.textContent = label();
     card.querySelector("ul").after(more);
-  }
-  card.tabIndex = 0;
-  card.setAttribute("aria-expanded", "false");
+    card.classList.add("has-details");
+    card.tabIndex = 0;
+    card.setAttribute("aria-expanded", "false");
 
-  const toggle = () => {
-    const open = card.classList.toggle("is-open");
-    card.setAttribute("aria-expanded", String(open));
-    const more = card.querySelector(".more");
-    if (more) more.textContent = open ? "− show less" : `+ ${items.length - 1} more — tap to expand`;
-  };
-  card.addEventListener("click", (e) => {
-    if (e.target.closest("a")) return;
-    toggle();
-  });
-  card.addEventListener("keydown", (e) => {
-    if (e.target !== card || (e.key !== "Enter" && e.key !== " ")) return;
-    e.preventDefault();
-    toggle();
-  });
+    const toggle = () => {
+      const open = card.classList.toggle("is-open");
+      card.setAttribute("aria-expanded", String(open));
+      more.textContent = open ? "− show less" : label();
+    };
+    card.addEventListener("click", (e) => {
+      if (e.target.closest("a")) return;
+      toggle();
+    });
+    card.addEventListener("keydown", (e) => {
+      if (e.target !== card || (e.key !== "Enter" && e.key !== " ")) return;
+      e.preventDefault();
+      toggle();
+    });
+  }
 
   if (finePointer && !reduceMotion) {
     card.addEventListener("pointermove", (e) => {

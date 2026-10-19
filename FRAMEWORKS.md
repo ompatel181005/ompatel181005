@@ -84,13 +84,13 @@ listing:
 ---
 ```
 
-   Then each project is one file, e.g. `projects/exchange-simulator.qmd`:
+   Then each project is one file, e.g. `projects/recall.qmd`:
 
 ```
 ---
-title: "Exchange Simulator"
-description: "C++20 limit-order-book matching engine, ~9M req/s"
-categories: [Quant, C++]
+title: "Recall"
+description: "Local-first lecture app with a RAG tutor that cites timestamps"
+categories: [AI/ML, Python]
 ---
 ```
 
@@ -154,7 +154,7 @@ echo "theme = 'PaperMod'" >> hugo.toml
 3. Add a project:
 
 ```
-hugo new content projects/exchange-simulator.md
+hugo new content projects/recall.md
 ```
 
 4. Build the site:
