@@ -26,12 +26,14 @@ low-latency C++, real-time computer vision on edge hardware, LLM-powered tools, 
 ## 🔭 Recent work
 | Project | What it is |
 |---|---|
+| 🏆 **[Luna Terminal](https://github.com/Darthh/Luna-LPL11-Hackathon)** | *Hackathon winner.* AI financial research terminal on serverless AWS (Bedrock, AgentCore, DynamoDB, Aurora DSQL); I built the backend, deployment, chat history, data stack and MCP endpoint |
 | **Exchange Simulator** | C++20 limit-order-book matching engine + market-making backtester — ~9M req/s, p99 < 600 ns |
 | **[Job Match Extension](https://github.com/ompatel181005/job-match-extension)** | Local-first Chrome extension + FastAPI service that ranks résumé versions against a job posting, with explainable scoring |
 | **[Recall](https://github.com/ompatel181005/Recall)** | Lecture recorder with local Whisper transcription and a RAG tutor that cites the exact minute |
 | **[JobFit AI](https://github.com/ompatel181005/jobfit)** | 3-agent résumé ↔ job matcher (SBERT + Gemini) |
 | **Analytics Warehouse** | Unattended DuckDB ETL pipeline with validation gates, audit history, MCP + Power BI feeds |
-| **[Mira](https://mira-dun-alpha.vercel.app)** | Multilingual healthcare navigator for uninsured patients |
+| 🏆 **[Mira](https://mira-dun-alpha.vercel.app)** | *Hackathon winner.* Multilingual healthcare navigator for uninsured patients |
+| 🏆 **[Emissions Prediction](https://github.com/ompatel181005/fitch-codeathon2025_DreamTeam)** | *Winner, FitchGroup Codeathon 2025.* Calibrated quantile-ensemble model for Scope 1/2 emissions (R² 0.65) |
 
 Full list (with filters) on the [portfolio](https://ompatel181005.github.io/ompatel181005/).
 

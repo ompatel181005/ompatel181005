@@ -267,7 +267,7 @@ const filterBtns = document.querySelectorAll(".filter-btn");
 // Show how many projects each filter matches
 filterBtns.forEach((btn) => {
   const filter = btn.dataset.filter;
-  const n = [...projectCards].filter((c) => filter === "all" || c.dataset.category === filter).length;
+  const n = [...projectCards].filter((c) => filter === "all" || c.dataset.category.split(" ").includes(filter)).length;
   const count = document.createElement("span");
   count.className = "count";
   count.textContent = n;
@@ -286,7 +286,7 @@ filterBtns.forEach((btn) => {
     btn.setAttribute("aria-selected", "true");
 
     projectCards.forEach((card) => {
-      const show = filter === "all" || card.dataset.category === filter;
+      const show = filter === "all" || card.dataset.category.split(" ").includes(filter);
       card.hidden = !show;
       card.classList.remove("pop");
       if (show && !reduceMotion) {

@@ -47,7 +47,7 @@
       </svg>
       <span class="sticker-core" aria-hidden="true"><span class="front">hire&nbsp;me?</span><span class="back">yes!</span></span>
     </button>
-    <p class="hero-eyebrow"><span class="wave">👋</span> Hi, I'm Om — CS @ UIC, Class of 2027</p>
+    <p class="hero-eyebrow"><span class="wave">👋</span> Hi, I'm Om — CS @ UIC, Class of 2027 · 🏆 3× hackathon winner</p>
     <h1 class="hero-title" aria-label="I build fast, thoughtful AI-native systems.">
       <span class="split">I build</span> <em class="split">fast,</em>
       <span class="split">thoughtful</span> <em class="split hl">AI-native</em>
@@ -179,6 +179,7 @@
 
     <div class="filter-row" role="tablist" aria-label="Filter projects by category">
       <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button class="filter-btn" data-filter="winner" role="tab" aria-selected="false">🏆 Winners</button>
       <button class="filter-btn" data-filter="ai-ml" role="tab" aria-selected="false">AI / ML</button>
       <button class="filter-btn" data-filter="quant" role="tab" aria-selected="false">Quant</button>
       <button class="filter-btn" data-filter="data-eng" role="tab" aria-selected="false">Data Engineering</button>
@@ -186,6 +187,73 @@
     </div>
 
     <div class="project-grid">
+
+      <article class="project-card" data-category="ai-ml winner">
+        <p class="award">🏆 Hackathon Winner</p>
+        <div class="project-head">
+          <h3>Luna Terminal</h3>
+          <div class="project-links">
+            <a href="https://github.com/Darthh/Luna-LPL11-Hackathon" aria-label="Luna Terminal on GitHub" title="View on GitHub">
+              <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+            </a>
+          </div>
+        </div>
+        <p class="project-tagline">Next.js · AWS Bedrock · AgentCore · DynamoDB · Aurora DSQL · SST · MCP</p>
+        <ul>
+          <li>Financial research terminal with an AI assistant that answers market questions from live, dated tool data (quotes, history, sentiment) instead of model memory</li>
+          <li>Built the AWS backend and deployment: serverless Next.js on Lambda + CloudFront via SST, IAM-only access to Bedrock with no stored keys</li>
+          <li>Built cross-device chat history on DynamoDB, the data stack on Aurora DSQL and S3, shared rate limits, and reliability work</li>
+          <li>Exposed the same market tools to external AI agents through a read-only MCP endpoint; 3-person team</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">LLM Agents</span><span class="tag">Serverless AWS</span><span class="tag">MCP</span>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="swe winner">
+        <p class="award">🏆 Hackathon Winner</p>
+        <div class="project-head">
+          <h3>Mira — Healthcare Navigator</h3>
+          <div class="project-links">
+            <a href="https://mira-dun-alpha.vercel.app" aria-label="Mira live demo" title="Live demo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+            </a>
+            <a href="https://github.com/ompatel181005/Mira" aria-label="Mira on GitHub" title="View on GitHub">
+              <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+            </a>
+          </div>
+        </div>
+        <p class="project-tagline">React · TypeScript · Multilingual UX</p>
+        <ul>
+          <li>Multilingual (15 languages) web app helping undocumented, uninsured, and low-income patients navigate U.S. healthcare without an account</li>
+          <li>Surfaces charity-care programs and sliding-scale clinics, explains medical bills, and helps with applications</li>
+          <li>Built and shipped a live, working product end-to-end</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">React</span><span class="tag">Accessibility</span><span class="tag">Social Impact</span>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="quant winner">
+        <p class="award">🏆 Winner · FitchGroup Codeathon 2025</p>
+        <div class="project-head">
+          <h3>Emissions Prediction ML System</h3>
+          <div class="project-links">
+            <a href="https://github.com/ompatel181005/fitch-codeathon2025_DreamTeam" aria-label="Emissions Prediction on GitHub" title="View on GitHub">
+              <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+            </a>
+          </div>
+        </div>
+        <p class="project-tagline">CatBoost · LightGBM · Quantile Regression · Calibration</p>
+        <ul>
+          <li>Achieved R² = 0.65 (Scope 1) and 0.48 (Scope 2) with leakage-safe target encoding and quantile ensembles</li>
+          <li>Isotonic calibration on top of the ensemble for well-calibrated uncertainty estimates</li>
+          <li>Modeled $174M risk reduction for portfolio-level emissions estimation</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Gradient Boosting</span><span class="tag">Calibration</span><span class="tag">Data Engineering</span>
+        </div>
+      </article>
 
       <article class="project-card" data-category="quant">
         <div class="project-head">
@@ -286,29 +354,6 @@
         </div>
       </article>
 
-      <article class="project-card" data-category="swe">
-        <div class="project-head">
-          <h3>Mira — Healthcare Navigator</h3>
-          <div class="project-links">
-            <a href="https://mira-dun-alpha.vercel.app" aria-label="Mira live demo" title="Live demo">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
-            </a>
-            <a href="https://github.com/ompatel181005/Mira" aria-label="Mira on GitHub" title="View on GitHub">
-              <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-            </a>
-          </div>
-        </div>
-        <p class="project-tagline">React · TypeScript · Multilingual UX</p>
-        <ul>
-          <li>Multilingual (15 languages) web app helping undocumented, uninsured, and low-income patients navigate U.S. healthcare without an account</li>
-          <li>Surfaces charity-care programs and sliding-scale clinics, explains medical bills, and helps with applications</li>
-          <li>Built and shipped a live, working product end-to-end</li>
-        </ul>
-        <div class="tag-row">
-          <span class="tag">React</span><span class="tag">Accessibility</span><span class="tag">Social Impact</span>
-        </div>
-      </article>
-
       <article class="project-card" data-category="data-eng">
         <div class="project-head">
           <h3>Time-Lapse Dataset Stream Server</h3>
@@ -344,26 +389,6 @@
         </ul>
         <div class="tag-row">
           <span class="tag">Networking</span><span class="tag">Concurrency</span><span class="tag">Game Logic</span>
-        </div>
-      </article>
-
-      <article class="project-card" data-category="quant">
-        <div class="project-head">
-          <h3>Emissions Prediction ML System</h3>
-          <div class="project-links">
-            <a href="https://github.com/ompatel181005/fitch-codeathon2025_DreamTeam" aria-label="Emissions Prediction on GitHub" title="View on GitHub">
-              <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-            </a>
-          </div>
-        </div>
-        <p class="project-tagline">CatBoost · LightGBM · Quantile Regression · Calibration — FitchGroup Codeathon 2025</p>
-        <ul>
-          <li>Achieved R² = 0.65 (Scope 1) and 0.48 (Scope 2) with leakage-safe target encoding and quantile ensembles</li>
-          <li>Isotonic calibration on top of the ensemble for well-calibrated uncertainty estimates</li>
-          <li>Modeled $174M risk reduction for portfolio-level emissions estimation</li>
-        </ul>
-        <div class="tag-row">
-          <span class="tag">Gradient Boosting</span><span class="tag">Calibration</span><span class="tag">Data Engineering</span>
         </div>
       </article>
 
