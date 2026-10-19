@@ -356,3 +356,15 @@ footer {
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 .js-enabled .reveal.in-view { opacity: 1; transform: translateY(0); }
+
+/* ---------- Private repo badge ---------- */
+.private-badge {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--text-faint);
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  padding: 5px 8px;
+  white-space: nowrap;
+}
+.filter-btn .count { opacity: 0.6; margin-left: 4px; }

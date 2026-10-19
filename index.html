@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Om Patel — AI/ML &amp; Full-Stack Engineer</title>
 <meta name="description" content="Portfolio of Om Patel — CS student at UIC building AI-native systems: computer vision on edge hardware, multi-agent LLM apps, and full-stack ML products." />
+<meta name="theme-color" content="#0b0e14" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Om Patel — AI/ML &amp; Full-Stack Engineer" />
+<meta property="og:description" content="CS @ UIC building AI-native systems: low-latency C++, computer vision on edge hardware, multi-agent LLM apps, and data pipelines." />
+<meta property="og:url" content="https://omnp.me/" />
+<meta name="twitter:card" content="summary" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0e14'/%3E%3Ctext x='32' y='42' font-family='monospace' font-size='28' font-weight='700' fill='%236ee7c9' text-anchor='middle'%3EOP%3C/text%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -30,9 +37,9 @@
   <p class="hero-eyebrow">Hi, I'm Om 👋</p>
   <h1>AI/ML &amp; Full-Stack Engineer building <span>AI-native systems.</span></h1>
   <p class="lede">
-    CS student at UIC (Class of 2027) focused on real-time computer vision on edge hardware,
-    multi-agent LLM applications, and full-stack ML products — with a habit of squeezing
-    performance out of constrained systems.
+    CS student at UIC (Class of 2027) building low-latency systems in C++, real-time computer
+    vision on edge hardware, LLM-powered tools, and the data pipelines underneath them — with a
+    habit of squeezing performance out of constrained systems.
   </p>
   <div class="hero-actions">
     <a class="btn btn-primary" href="#projects">View Projects</a>
@@ -40,7 +47,7 @@
   </div>
   <div class="hero-meta">
     <span><strong>Location</strong> · Chicago, IL</span>
-    <span><strong>Focus</strong> · AI/ML · Computer Vision · Edge Computing</span>
+    <span><strong>Focus</strong> · AI/ML · Low-Latency Systems · Data Engineering</span>
     <span><strong>Currently</strong> · Studying CS @ UIC</span>
   </div>
 </header>
@@ -84,7 +91,7 @@
         <h3>Languages</h3>
         <div class="tag-row">
           <span class="tag">Python</span><span class="tag">C / C++</span>
-          <span class="tag">JavaScript / TypeScript</span><span class="tag">SQL</span>
+          <span class="tag">Java</span><span class="tag">JavaScript / TypeScript</span><span class="tag">SQL</span>
         </div>
       </div>
       <div class="skill-card">
@@ -100,6 +107,22 @@
         <div class="tag-row">
           <span class="tag">YOLOv8</span><span class="tag">DeepSORT</span>
           <span class="tag">OpenCV</span><span class="tag">Edge Inference</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Quant &amp; Performance</h3>
+        <div class="tag-row">
+          <span class="tag">Order Books</span><span class="tag">Backtesting</span>
+          <span class="tag">Benchmarking</span><span class="tag">Fuzz Testing</span>
+          <span class="tag">CMake / GoogleTest</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Data</h3>
+        <div class="tag-row">
+          <span class="tag">DuckDB</span><span class="tag">SQLite</span>
+          <span class="tag">Parquet</span><span class="tag">ETL / Validation</span>
+          <span class="tag">Power BI</span>
         </div>
       </div>
       <div class="skill-card">
@@ -131,7 +154,7 @@
   <div class="container reveal">
     <p class="section-kicker">Projects</p>
     <h2>Featured Work</h2>
-    <p class="section-intro">Work spans a few different fields — filter by area, or browse everything.</p>
+    <p class="section-intro">Work spans a few different fields — filter by area, or browse everything. Projects marked <em>Private repo</em> aren't public yet; happy to walk through the code on request.</p>
 
     <div class="filter-row" role="tablist" aria-label="Filter projects by category">
       <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All</button>
@@ -142,6 +165,46 @@
     </div>
 
     <div class="project-grid">
+
+      <article class="project-card" data-category="quant">
+        <div class="project-head">
+          <h3>Exchange Simulator</h3>
+          <div class="project-links">
+            <span class="private-badge" title="Private repository — happy to walk through it on request">Private repo</span>
+          </div>
+        </div>
+        <p class="project-tagline">C++20 · CMake · GoogleTest · Market Making</p>
+        <ul>
+          <li>Limit-order-book matching engine with price-time priority: limit, IOC and market orders, partial fills, cancel/modify, self-trade prevention, multiple symbols</li>
+          <li>~9M requests/s single-threaded on a mixed flow — p50 ≈ 100 ns, p99 &lt; 600 ns — with no floating point on the matching path</li>
+          <li>Backtester replays order flow with simulated latency and scores a market-making strategy on fill rate, PnL, drawdown and inventory</li>
+          <li>72 tests, including a differential fuzz test against a naive reference book over 120k random requests; replays are byte-for-byte deterministic</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Low Latency</span><span class="tag">Order Book</span><span class="tag">Backtesting</span>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="ai-ml">
+        <div class="project-head">
+          <h3>Job Match Extension</h3>
+          <div class="project-links">
+            <a href="https://github.com/ompatel181005/job-match-extension" aria-label="Job Match Extension on GitHub" title="View on GitHub">
+              <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+            </a>
+          </div>
+        </div>
+        <p class="project-tagline">Python · FastAPI · Chrome MV3 · SQLite · Gemini</p>
+        <ul>
+          <li>Local-first Chrome side panel that ranks a library of résumé versions against the job posting you're looking at</li>
+          <li>Explainable scoring at the requirement level — every point traces to résumé evidence or an explicit gap, with experience weighted above skills lists</li>
+          <li>Captures Greenhouse, Lever, Ashby or any page; Gemini structured extraction with a deterministic offline fallback</li>
+          <li>Versioned SQLite résumé library with idempotent, content-digest imports</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Explainable Ranking</span><span class="tag">Chrome Extension</span><span class="tag">FastAPI</span>
+        </div>
+      </article>
 
       <article class="project-card" data-category="ai-ml">
         <div class="project-head">
@@ -183,6 +246,25 @@
         </div>
       </article>
 
+      <article class="project-card" data-category="data-eng">
+        <div class="project-head">
+          <h3>Analytics Warehouse &amp; Pipeline</h3>
+          <div class="project-links">
+            <span class="private-badge" title="Private repository — happy to walk through it on request">Private repo</span>
+          </div>
+        </div>
+        <p class="project-tagline">Python · DuckDB · SQL · Parquet · MCP · Power BI</p>
+        <ul>
+          <li>Shared DuckDB warehouse rebuilt from raw sales and supplier spreadsheets by unattended, scheduled loads</li>
+          <li>Validation gates refuse bad input — schema drift, future-dated periods, duplicate pastes, double loads — and every run writes a plain-English report</li>
+          <li>Idempotent loads with full audit history, a vendor-name crosswalk, and per-source schemas for clean onboarding of new data feeds</li>
+          <li>Serves a read-only MCP endpoint for LLM analytics and a Parquet feed for Power BI, with automatic dated backups</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Data Warehouse</span><span class="tag">ETL</span><span class="tag">DuckDB</span>
+        </div>
+      </article>
+
       <article class="project-card" data-category="swe">
         <div class="project-head">
           <h3>Mira — Healthcare Navigator</h3>
@@ -203,6 +285,44 @@
         </ul>
         <div class="tag-row">
           <span class="tag">React</span><span class="tag">Accessibility</span><span class="tag">Social Impact</span>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="data-eng">
+        <div class="project-head">
+          <h3>Time-Lapse Dataset Stream Server</h3>
+          <div class="project-links">
+            <span class="private-badge" title="Private repository — happy to walk through it on request">Private repo</span>
+          </div>
+        </div>
+        <p class="project-tagline">Python · Flask · OpenCV · Docker · Gunicorn</p>
+        <ul>
+          <li>MJPEG server that plays back a two-year campus weather-camera photo dataset as smooth video in the browser</li>
+          <li>Isolated per-user sessions with their own speed, timestamp, camera and loop mode, plus timestamp overlays</li>
+          <li>Global frame cache, buffering and interpolation fallback; runs on an NFS-mounted dataset or in a self-contained demo mode</li>
+          <li>Dockerized with a built-in CPU/memory monitor that writes diagnostic bundles when limits are exceeded</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Video Streaming</span><span class="tag">Caching</span><span class="tag">Docker</span>
+        </div>
+      </article>
+
+      <article class="project-card" data-category="swe">
+        <div class="project-head">
+          <h3>Networked Checkers</h3>
+          <div class="project-links">
+            <span class="private-badge" title="Private repository — happy to walk through it on request">Private repo</span>
+          </div>
+        </div>
+        <p class="project-tagline">Java · JavaFX · Sockets · Maven · JUnit</p>
+        <ul>
+          <li>Client–server checkers game with a JavaFX GUI over a custom socket protocol</li>
+          <li>Server handles accounts, matchmaking, friends, rematches and per-user stats</li>
+          <li>Optional LLM-powered AI opponent with selectable difficulty</li>
+          <li>Server-side move validation and game lifecycle covered by JUnit tests</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Networking</span><span class="tag">Concurrency</span><span class="tag">Game Logic</span>
         </div>
       </article>
 
@@ -338,7 +458,7 @@
 
 <footer>
   <div class="container">
-    &copy; <span id="year"></span> Om Patel. Built with HTML, CSS, and JS — hosted on GitHub Pages.
+    &copy; <span id="year"></span> Om Patel. Built with plain HTML, CSS, and JS — hosted on GitHub Pages.
   </div>
 </footer>
 

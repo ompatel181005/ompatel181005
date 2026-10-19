@@ -18,10 +18,22 @@
 </p>
 
 CS student at UIC (Class of 2027) building AI-native, high-performance systems —
-real-time computer vision on edge hardware, multi-agent LLM apps, and full-stack ML products.
+low-latency C++, real-time computer vision on edge hardware, LLM-powered tools, and data pipelines.
 
 **Featured projects, write-ups, and skills live on my portfolio site:**
 ### 👉 [ompatel181005.github.io/ompatel181005](https://ompatel181005.github.io/ompatel181005/)
+
+## 🔭 Recent work
+| Project | What it is |
+|---|---|
+| **Exchange Simulator** | C++20 limit-order-book matching engine + market-making backtester — ~9M req/s, p99 < 600 ns |
+| **[Job Match Extension](https://github.com/ompatel181005/job-match-extension)** | Local-first Chrome extension + FastAPI service that ranks résumé versions against a job posting, with explainable scoring |
+| **[Recall](https://github.com/ompatel181005/Recall)** | Lecture recorder with local Whisper transcription and a RAG tutor that cites the exact minute |
+| **[JobFit AI](https://github.com/ompatel181005/jobfit)** | 3-agent résumé ↔ job matcher (SBERT + Gemini) |
+| **Analytics Warehouse** | Unattended DuckDB ETL pipeline with validation gates, audit history, MCP + Power BI feeds |
+| **[Mira](https://mira-dun-alpha.vercel.app)** | Multilingual healthcare navigator for uninsured patients |
+
+Full list (with filters) on the [portfolio](https://ompatel181005.github.io/ompatel181005/).
 
 ---
 
@@ -37,3 +49,30 @@ real-time computer vision on edge hardware, multi-agent LLM apps, and full-stack
     <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white">
   </a>
 </p>
+
+
+---
+
+<details>
+<summary><b>🛠️ Building the portfolio site</b></summary>
+
+The site is plain HTML/CSS/JS — no build step.
+
+1. Clone the repository:
+
+```
+git clone https://github.com/ompatel181005/ompatel181005
+cd ompatel181005
+```
+
+2. Preview locally:
+
+```
+python3 -m http.server 8000
+```
+
+3. Open <http://localhost:8000>. Edit `index.html` to add projects; push to `main` to deploy via GitHub Pages.
+
+Thinking about moving to a framework (Quarto, Astro, Hugo, Jekyll, MkDocs)? See **[FRAMEWORKS.md](FRAMEWORKS.md)** for a comparison and step-by-step build instructions for each.
+
+</details>

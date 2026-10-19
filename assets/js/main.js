@@ -34,6 +34,16 @@ if ("IntersectionObserver" in window && revealEls.length) {
 const filterBtns = document.querySelectorAll(".filter-btn");
 const projectCards = document.querySelectorAll(".project-card");
 
+// Show how many projects each filter matches
+filterBtns.forEach((btn) => {
+  const filter = btn.dataset.filter;
+  const n = [...projectCards].filter((c) => filter === "all" || c.dataset.category === filter).length;
+  const count = document.createElement("span");
+  count.className = "count";
+  count.textContent = n;
+  btn.appendChild(count);
+});
+
 filterBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     const filter = btn.dataset.filter;
