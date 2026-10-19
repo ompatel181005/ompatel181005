@@ -31,6 +31,7 @@
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#research">Research</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#awards">Awards</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -115,7 +116,7 @@
 
 <section id="experience">
   <div class="container reveal">
-    <p class="section-kicker">Experience</p>
+    <p class="section-kicker">Work experience</p>
     <h2>Where I've <em>worked</em></h2>
     <p class="section-intro">Tap a role to open the details.</p>
     <div class="xp-list">
@@ -146,24 +147,20 @@
       </details>
       <details class="xp">
         <summary>
-          <span class="xp-dates">Apr 2025 – Present</span>
+          <span class="xp-dates">Fall 2026 – Present</span>
           <span class="xp-main">
-            <span class="xp-role">Undergraduate Research Assistant</span>
-            <span class="xp-org">Electronic Visualization Laboratory (EVL), UIC · Chicago, IL</span>
-            <span class="xp-sum">Edge AI and real-time systems research under Dr. Michael Papka.</span>
+            <span class="xp-role">Teaching Assistant, CS 251 Data Structures &amp; Algorithms</span>
+            <span class="xp-org">University of Illinois Chicago · Chicago, IL</span>
+            <span class="xp-sum">Lead a weekly C++ lab of ~30 students in a ~250-student course.</span>
           </span>
           <span class="xp-toggle" aria-hidden="true"></span>
         </summary>
         <div class="xp-body">
         <ul>
-          <li>Doubled a real-time pedestrian-flow pipeline from ~15 to 30 FPS on a Jetson Nano through software optimization, then benchmarked models across Jetson Nano, Orin and Thor (100+ FPS capability, production capped at 60 FPS).</li>
-          <li>Deployed directional pedestrian counting with detection and multi-object tracking in UIC's main CS building. It ran 6-8 months with a live dashboard and reached zero observed counting error in manual validation.</li>
-          <li>Built a multi-user image-streaming platform over 103M+ archived images that serves 40 concurrent streams on a 10-year-old CPU-only server, using per-session isolation and Redis caching.</li>
-          <li>Built a FastAPI and WebSocket telemetry service across 2 edge nodes on the NSF SAGE testbed: readings every 2 seconds, REST ingestion, query and CSV export, per-device auth, running as systemd services.</li>
-          <li>Fine-tuned a PyTorch computer-vision model on the lab's time-lapse images to classify weather on the edge.</li>
-          <li>Building the ingestion pipeline for AskGeorge, a team-built agentic RAG system that helps scientists across institutions find people and resources (in progress).</li>
+          <li>Lead a weekly C++ lab of ~30 students in a ~250-student course and hold weekly office hours.</li>
+          <li>Help with every homework and project, from hash tables and search trees to graphs and sorting, without giving answers away.</li>
         </ul>
-        <p class="xp-stack"><span>Stack</span> Python, PyTorch, OpenCV, YOLO, ByteTrack, FastAPI, WebSockets, Redis, SQLite, NVIDIA Jetson, Linux, systemd</p>
+        <p class="xp-stack"><span>Stack</span> C++</p>
         </div>
       </details>
       <details class="xp">
@@ -186,22 +183,47 @@
         <p class="xp-stack"><span>Stack</span> React, TypeScript, Vite, DuckDB-WASM, Google Cloud, Gemini</p>
         </div>
       </details>
-      <details class="xp">
-        <summary>
-          <span class="xp-dates">Fall 2026 – Present</span>
+      <div class="xp">
+        <div class="xp-summary">
+          <span class="xp-dates">&nbsp;</span>
           <span class="xp-main">
-            <span class="xp-role">Teaching Assistant, CS 251 Data Structures &amp; Algorithms</span>
-            <span class="xp-org">University of Illinois Chicago · Chicago, IL</span>
-            <span class="xp-sum">Lead a weekly C++ lab of ~30 students in a ~250-student course.</span>
+            <span class="xp-role">IT Support Specialist</span>
+            <span class="xp-org">UIC Technology Solutions · Chicago, IL</span>
+            <span class="xp-sum">Support students and staff across university services, including Microsoft 365, VPN and identity issues.</span>
+          </span>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="container reveal">
+    <p class="section-kicker">Research experience</p>
+    <h2>Where I <em>research</em></h2>
+    <p class="section-intro">Edge AI, real-time systems and human-centered design.</p>
+    <div class="xp-list">
+      <details class="xp" open>
+        <summary>
+          <span class="xp-dates">Apr 2025 – Present</span>
+          <span class="xp-main">
+            <span class="xp-role">Undergraduate Research Assistant</span>
+            <span class="xp-org">Electronic Visualization Laboratory (EVL), UIC · Chicago, IL</span>
+            <span class="xp-sum">Edge AI and real-time systems research under Dr. Michael Papka.</span>
           </span>
           <span class="xp-toggle" aria-hidden="true"></span>
         </summary>
         <div class="xp-body">
         <ul>
-          <li>Lead a weekly C++ lab of ~30 students in a ~250-student course and hold weekly office hours.</li>
-          <li>Help with every homework and project, from hash tables and search trees to graphs and sorting, without giving answers away.</li>
+          <li>Doubled a real-time pedestrian-flow pipeline from ~15 to 30 FPS on a Jetson Nano through software optimization, then benchmarked models across Jetson Nano, Orin and Thor (100+ FPS capability, production capped at 60 FPS).</li>
+          <li>Deployed directional pedestrian counting with detection and multi-object tracking in UIC's main CS building. It ran 6-8 months with a live dashboard and reached zero observed counting error in manual validation.</li>
+          <li>Built a multi-user image-streaming platform over 103M+ archived images that serves 40 concurrent streams on a 10-year-old CPU-only server, using per-session isolation and Redis caching.</li>
+          <li>Built a FastAPI and WebSocket telemetry service across 2 edge nodes on the NSF SAGE testbed: readings every 2 seconds, REST ingestion, query and CSV export, per-device auth, running as systemd services.</li>
+          <li>Fine-tuned a PyTorch computer-vision model on the lab's time-lapse images to classify weather on the edge.</li>
+          <li>Building the ingestion pipeline for AskGeorge, a team-built agentic RAG system that helps scientists across institutions find people and resources (in progress).</li>
         </ul>
-        <p class="xp-stack"><span>Stack</span> C++</p>
+        <p class="xp-stack"><span>Stack</span> Python, PyTorch, OpenCV, YOLO, ByteTrack, FastAPI, WebSockets, Redis, SQLite, NVIDIA Jetson, Linux, systemd</p>
         </div>
       </details>
       <details class="xp">
@@ -216,7 +238,7 @@
         </summary>
         <div class="xp-body">
         <ul>
-          <li>Owned the iOS app from design through build, and wrote ~80% of the Swift code across the iPhone app, widget and Apple Watch app.</li>
+          <li>Led development of the iOS app from design through build, across the iPhone app, home-screen widget and Apple Watch app.</li>
           <li>Designed the full flow and every screen in Figma, then iterated on high-fidelity screens in Claude Design.</li>
           <li>Built features including friend nudges and a MapKit heatmap of where events and people concentrate.</li>
           <li>Ran the research behind it: 214-person surveys, 107-person workshops, and a 12-concept feedback study that set a tiered roadmap.</li>
@@ -225,17 +247,6 @@
         <p class="xp-stack"><span>Stack</span> Swift, Xcode, MapKit, WidgetKit, watchOS, Figma</p>
         </div>
       </details>
-      <div class="xp">
-        <div class="xp-summary">
-          <span class="xp-dates">&nbsp;</span>
-          <span class="xp-main">
-            <span class="xp-role">IT Support Specialist</span>
-            <span class="xp-org">UIC Technology Solutions · Chicago, IL</span>
-            <span class="xp-sum">Support students and staff across university services, including Microsoft 365, VPN and identity issues.</span>
-          </span>
-          
-        </div>
-      </div>
     </div>
   </div>
 </section>

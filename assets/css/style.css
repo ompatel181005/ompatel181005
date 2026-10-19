@@ -164,7 +164,7 @@ section h2 { font-size: clamp(2.6rem, 6vw, 4.2rem); line-height: 1; margin: 0 0 
   cursor: pointer;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 920px) {
   .nav-toggle { display: block; }
   .nav-links {
     position: absolute; top: 100%; left: 12px; right: 12px;
@@ -412,7 +412,7 @@ section h2 { font-size: clamp(2.6rem, 6vw, 4.2rem); line-height: 1; margin: 0 0 
 @media (max-width: 600px) { .earlier-list li { grid-template-columns: 1fr; } }
 
 /* ---------- Awards ---------- */
-#awards { background: var(--bg-alt); }
+#awards, #research { background: var(--bg-alt); }
 .awards { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--text); }
 .award-row {
   --c: var(--lilac);
