@@ -2,7 +2,7 @@
 <p align="center"><i>Software engineer · Sole engineer at Mooremac · Researcher at UIC's EVL · TA for CS 251</i></p>
 
 <p align="center">
-  <a href="omnp.me"><b>🌐 View my portfolio →</b></a>
+  <a href="[omnp.me](https://omnp.me/)"><b>🌐 View my portfolio →</b></a>
 </p>
 
 <p align="center">
@@ -21,7 +21,7 @@ CS junior at UIC (B.S. Computer Science, expected Dec 2027; minors in Mathematic
 building AI tools, data systems and edge computer vision. Co-author of an invited IEEE IPDPS 2026 paper.
 
 **Featured projects, write-ups, and skills live on my portfolio site:**
-### 👉 [ompatel181005.github.io/ompatel181005](https://ompatel181005.github.io/ompatel181005/)
+### 👉 [[omnp.me](https://omnp.me/)]
 
 ## 🔭 Recent work
 | Project | What it is |
