@@ -2,7 +2,7 @@
 <p align="center"><i>Software engineer · Sole engineer at Mooremac · Researcher at UIC's EVL · TA for CS 251</i></p>
 
 <p align="center">
-  <a href="https://ompatel181005.github.io/ompatel181005/"><b>🌐 View my portfolio →</b></a>
+  <a href="omnp.me"><b>🌐 View my portfolio →</b></a>
 </p>
 
 <p align="center">
